@@ -6,7 +6,7 @@ public class Docente {
 	private String telefono;
 	private String cedula;
 	private String usuario;
-	private String passwd;
+	private String passwd; 
 
 	public int getId() {
 		return id;
@@ -29,7 +29,7 @@ public class Docente {
 	}
 
 	public void setTelefono(String telefono) {
-		this.telefono = telefono;
+		this.telefono = telefono; 
 	}
 
 	public String getCedula() {
