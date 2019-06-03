@@ -1,16 +1,9 @@
 package ec.edu.ups.entidad;
 
-/**
- * 
- * @author ASUS
- *
- */
-public class Tutoria {
-
+public class Encuesta {
 	private int id;
 	private String descripcion;
-	private Grupo grupo;
-
+	private MensajeGrupo grupo;
 	public int getId() {
 		return id;
 	}
@@ -18,25 +11,23 @@ public class Tutoria {
 	 * 
 	 * @param id El parametro Id es el identificador unico para cada objeto de esta clase
 	 */
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
 	public String getDescripcion() {
 		return descripcion;
 	}
-
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-
-	public Grupo getGrupo() {
+	public MensajeGrupo getGrupo() {
 		return grupo;
 	}
-
-	public void setGrupo(Grupo grupo) {
+	public void setGrupo(MensajeGrupo grupo) {
 		this.grupo = grupo;
 	}
+	
+	
+	
 
 }

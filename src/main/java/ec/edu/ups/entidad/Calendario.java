@@ -1,16 +1,13 @@
 package ec.edu.ups.entidad;
-
 /**
  * 
- * @author ASUS
+ * @author ASUS La Clase canlendario sirve para guardar los horarios correspondientes a los docente o estudiantes con sus respectivas materias
  *
  */
-public class Tutoria {
 
+public class Calendario {
 	private int id;
-	private String descripcion;
 	private Grupo grupo;
-
 	public int getId() {
 		return id;
 	}
@@ -18,25 +15,20 @@ public class Tutoria {
 	 * 
 	 * @param id El parametro Id es el identificador unico para cada objeto de esta clase
 	 */
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	public String getDescripcion() {
-		return descripcion;
-	}
-
-	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
-	}
-
 	public Grupo getGrupo() {
 		return grupo;
 	}
-
+	/**
+	 * 
+	 * @param grupo El parametro atributo hace referencia a la Clase grupo en donde se accedera para tener informacion 
+	 */
 	public void setGrupo(Grupo grupo) {
 		this.grupo = grupo;
 	}
+	
+	
 
 }

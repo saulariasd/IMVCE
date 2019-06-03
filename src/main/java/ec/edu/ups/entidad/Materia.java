@@ -7,7 +7,11 @@ public class Materia {
 
 	public int getId() {
 		return id;
-	}
+	} 
+	/**
+	 * 
+	 * @param id El parametro Id es el identificador unico para cada objeto de esta clase
+	 */
 
 	public void setId(int id) {
 		this.id = id;
