@@ -3,7 +3,7 @@ public class ejemplo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("MIJA HERNAN GAY ");
+		System.out.println("MIJA HERNAN GAY  ");
 	}
 
 }
