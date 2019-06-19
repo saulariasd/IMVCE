@@ -1,12 +1,14 @@
 package ec.edu.ups.negocio;
 
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 
 import ec.edu.ups.dao.EstudianteDao;
 import ec.edu.ups.entidad.Estudiante;
 
 @Stateless
 public class EstudianteON {
+	@Inject
 	private EstudianteDao dao;
 	
 	public void guardarEstudiante(Estudiante estudiante) throws Exception 

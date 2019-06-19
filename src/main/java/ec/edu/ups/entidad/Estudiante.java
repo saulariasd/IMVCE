@@ -11,8 +11,6 @@ import org.hibernate.validator.constraints.Email;
 @Entity
 public class Estudiante {
 	@Id
-	@GeneratedValue
-	@NotNull
 	private int id;
 	private String nombre;
 	private String telefono;

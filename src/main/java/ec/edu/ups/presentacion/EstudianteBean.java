@@ -36,6 +36,7 @@ public class EstudianteBean {
 	public String cargarDatos() {
 		try {
 			estudianteON.guardarEstudiante(estudiante);
+			init();
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
