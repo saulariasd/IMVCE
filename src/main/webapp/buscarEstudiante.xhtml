@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+		<div id="cabecera">
+		<ui:insert name="header">
+			<ui:include src="/templates/cabecera.xhtml" />
+		</ui:insert>
+	</div>
+	<h:form>
+		<h:panelGrid>
+			<h:outputLabel value="Buscar" />
+			<h:inputText value="" />
+			<h:dataTable value="#{estudianteBean.listaFiltro}"
+				var="estudiante" border="1"
+				render="#{not empty estudianteBean.listaFiltro}">
+				<h:column>
+					<f:facet name="Codigo">Codigo</f:facet>
+					#{estudiante.id}
+				</h:column>
+				<h:column>
+					<f:facet name="Cedula">Cedula</f:facet>
+					#{estudiante.cedula}	
+				</h:column>
+				<h:column>
+					<f:facet name="Nombre">Nombre</f:facet>
+					#{estudiante.nombre}	
+				</h:column>
+				<h:column>
+					<f:facet name="Telefono">Telefono</f:facet>
+					#{estudiante.telefono}	
+				</h:column>
+				<h:column>
+					<f:facet name="Usuario">Usuario</f:facet>
+					#{estudiante.usuario}	
+				</h:column>
+			</h:dataTable>
+			<h:commandLink action="/estudiante" value="Ingresar" />
+		</h:panelGrid>
+	</h:form>
+
+</body> 
+</html>
