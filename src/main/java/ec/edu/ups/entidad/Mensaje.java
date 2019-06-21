@@ -2,7 +2,7 @@ package ec.edu.ups.entidad;
 
 import java.util.Date;
 
-public class MensajeContacto {
+public class Mensaje {
 	private int id;
 	private String emisor;
 	private String receptor;

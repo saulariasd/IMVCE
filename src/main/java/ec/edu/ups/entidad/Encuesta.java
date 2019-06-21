@@ -3,7 +3,7 @@ package ec.edu.ups.entidad;
 public class Encuesta {
 	private int id;
 	private String descripcion;
-	private MensajeGrupo grupo;
+	private Mensaje mensaje;
 	public int getId() {
 		return id;
 	}
@@ -20,11 +20,11 @@ public class Encuesta {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public MensajeGrupo getGrupo() {
-		return grupo;
+	public Mensaje getMensaje() {
+		return mensaje;
 	}
-	public void setGrupo(MensajeGrupo grupo) {
-		this.grupo = grupo;
+	public void setGrupo(Mensaje mensaje) {
+		this.mensaje = mensaje;
 	}
 	
 	

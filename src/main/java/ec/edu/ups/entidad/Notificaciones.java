@@ -3,8 +3,7 @@ package ec.edu.ups.entidad;
 public class Notificaciones {
 	
 	private int id;
-	private MensajeContacto contacto;
-	private MensajeGrupo grupo;
+	private Mensaje mensaje;
 	private String descripcion;
 	private Tutoria tutoria;
 	public int getId() {
@@ -17,17 +16,11 @@ public class Notificaciones {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public MensajeContacto getContacto() {
-		return contacto;
+	public Mensaje getMensaje() {
+		return mensaje;
 	}
-	public void setContacto(MensajeContacto contacto) {
-		this.contacto = contacto;
-	}
-	public MensajeGrupo getGrupo() {
-		return grupo;
-	}
-	public void setGrupo(MensajeGrupo grupo) {
-		this.grupo = grupo;
+	public void setMensaje(Mensaje mensaje) {
+		this.mensaje = mensaje;
 	}
 	public String getDescripcion() {
 		return descripcion;

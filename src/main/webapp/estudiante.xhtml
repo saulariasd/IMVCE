@@ -13,5 +13,44 @@
 			<ui:include src="/templates/cabecera.xhtml" />
 		</ui:insert>
 	</div>
+	<h:form>
+		<table>
+			<tr>
+				<th><h:outputLabel value="Codigo" /></th>
+				<td><h:inputText value="#{estudianteBean.estudiante.id}"
+						id="txtCodigo" /> <h:message for="txtCodigo" /></td>
+			</tr>
+			<tr>
+				<th><h:outputLabel value="Nombre" /></th>
+				<td><h:inputText value="#{estudianteBean.estudiante.nombre}"
+						id="txtNombre" /> <h:message for="txtNombre" /></td>
+			</tr>
+			<tr>
+				<th><h:outputLabel value="Cedula" /></th>
+				<td><h:inputText value="#{estudianteBean.estudiante.cedula}"
+						id="txtCedula" /> <h:message for="txtCedula" /></td>
+			</tr>
+			<tr>
+				<th><h:outputLabel value="Telefono" /></th>
+				<td><h:inputText value="#{estudianteBean.estudiante.telefono}"
+						id="txtTelefono" /> <h:message for="txtTelefono" /></td>
+			</tr>
+			<tr>
+				<th><h:outputLabel value="Email" /></th>
+				<td><h:inputText value="#{estudianteBean.estudiante.usuario}"
+						id="txtEmail" /> <h:message for="txtEmail" /></td>
+			</tr>
+			<tr>
+				<th><h:outputLabel value="Passwd" /></th>
+				<td><h:inputSecret value="#{estudianteBean.estudiante.passwd}"
+						id="txtPasswd" /> <h:message for="txtPasswd" /></td>
+			</tr>
+		</table>
+		<h:panelGrid>
+			<h:commandButton action="#{estudianteBean.guarModEstudiante()}"
+				value="Guardar" />
+			<h:commandLink action="/listaEstudiante" value="Lista" immediate="true"/>
+		</h:panelGrid>
+	</h:form>
 </body>
 </html>

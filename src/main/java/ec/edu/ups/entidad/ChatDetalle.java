@@ -4,8 +4,7 @@ import java.util.Date;
 
 public class ChatDetalle {
 	private int id;
-	private MensajeContacto contacto;
-	private MensajeGrupo grupo;
+	private Mensaje mensaje;
 	private String descripcion;
 	private Date hora;
 	public int getId() {
@@ -18,25 +17,15 @@ public class ChatDetalle {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public MensajeContacto getContacto() {
-		return contacto;
+	public Mensaje getMensaje() {
+		return mensaje;
 	}
 	/**
 	 * 
 	 * @param contacto el parametero contacto sirve para obtener el Identificador de la Clase MensajeContacto
 	 */
-	public void setContacto(MensajeContacto contacto) {
-		this.contacto = contacto;
-	}
-	public MensajeGrupo getGrupo() {
-		return grupo;
-	}
-	/**
-	 * 
-	 * @param grupo el parametero contacto sirve para obtener el Identificador de la Clase Grupo
-	 */
-	public void setGrupo(MensajeGrupo grupo) {
-		this.grupo = grupo;
+	public void setMensaje(Mensaje mensaje) {
+		this.mensaje = mensaje;
 	}
 	public String getDescripcion() {
 		return descripcion;
